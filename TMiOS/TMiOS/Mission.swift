@@ -17,11 +17,28 @@ enum Priority: Int {
 
 class Mission {
 	var name: String
-	var priority: Int
-	var start: NSTimeInterval
-	var end: NSTimeInterval
+	var priority: Priority
+	let manager: Person
+	var startTime: NSDate
+	var endTime: NSDate
 	var complite: Bool
 	var childMission: [Mission]
 	
+	init(name: String, manager: Person, startTime: NSDate, endTime: NSDate) {
+		self.name = name
+		self.priority = Priority.unset
+		self.manager = manager
+		self.startTime = startTime
+		self.endTime = endTime
+		self.complite = false
+		childMission = [Mission]()
+	}
 	
+	convenience init() {
+		self.init(name: "[untitled]", manager: Person(), startTime: NSDate(), endTime: NSDate())
+	}
+	
+	func addChildMission(child: Mission) {
+		childMission.append(child)
+	}
 }

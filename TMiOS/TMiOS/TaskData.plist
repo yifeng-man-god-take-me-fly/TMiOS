@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>User</key>
+	<dict>
+		<key>Missions</key>
+		<array/>
+		<key>Tasks</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Demo Task</string>
+				<key>startTime</key>
+				<date>2015-10-26T13:33:09Z</date>
+				<key>endTime</key>
+				<date>2015-10-26T13:33:18Z</date>
+				<key>description</key>
+				<string>this is desscription</string>
+				<key>founder</key>
+				<string>Tidyzq</string>
+				<key>missions</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>start</string>
+						<key>priority</key>
+						<integer>1</integer>
+						<key>manager</key>
+						<string>Tidyzq</string>
+						<key>startTime</key>
+						<date>2015-10-26T13:40:21Z</date>
+						<key>endTime</key>
+						<date>2015-10-26T13:40:29Z</date>
+						<key>complite</key>
+						<false/>
+						<key>childMission</key>
+						<array/>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>headPortrait</key>
+		<string>Tidyzq.png</string>
+		<key>name</key>
+		<string>Tidyzq</string>
+	</dict>
+</dict>
+</plist>

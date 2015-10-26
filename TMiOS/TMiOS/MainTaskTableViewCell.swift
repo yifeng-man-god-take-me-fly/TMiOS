@@ -9,9 +9,24 @@
 import UIKit
 
 class MainTaskTableViewCell: UITableViewCell {
+	
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var colorLabel: UILabel!
+	
+	var task: Task = Task() {
+		didSet {
+			configureView()
+		}
+	}
+	
+	func configureView() {
+		titleLabel.text = task.name
+		colorLabel.backgroundColor = task.color
+	}
 
     override func awakeFromNib() {
-        super.awakeFromNib()
+		configureView()
+        // super.awakeFromNib()
         // Initialization code
     }
 
